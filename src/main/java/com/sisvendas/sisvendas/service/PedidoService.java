@@ -13,7 +13,7 @@ public class PedidoService extends BaseService<Pedido, IPedidoRepository>{
 
     @Override
     public Pedido Adicionar(Pedido entity) {
-        // TODO Auto-generated method stub
+        
         List<PedidoProduto> pedidoProduto = entity.getPedidoProdutos();
 
         pedidoProduto.forEach(pp -> pp.setPedido(entity));
@@ -22,7 +22,7 @@ public class PedidoService extends BaseService<Pedido, IPedidoRepository>{
 
     @Override
     public Pedido Atualizar(long id, Pedido entity) {
-        // TODO Auto-generated method stub
+        
         List<PedidoProduto> pedidoProduto = entity.getPedidoProdutos();
 
         pedidoProduto.forEach(pp -> pp.setPedido(entity));
