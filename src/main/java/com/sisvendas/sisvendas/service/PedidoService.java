@@ -2,10 +2,13 @@ package com.sisvendas.sisvendas.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.sisvendas.sisvendas.models.Pedido;
 import com.sisvendas.sisvendas.models.PedidoProduto;
 import com.sisvendas.sisvendas.repositories.IPedidoRepository;
 
+@Service
 public class PedidoService extends BaseService<Pedido, IPedidoRepository>{
 
     @Override
